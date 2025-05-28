@@ -16,3 +16,9 @@ img {
   object-fit: contain;
 }
 
+body {
+  @include primary-font (14px, 20px); // $font-size, $line-height
+
+  font-weight: 400;
+  margin: 0;
+}

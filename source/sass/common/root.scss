@@ -3,25 +3,28 @@
   --black: #000000;
   --text-primary: #484848;
   --bg-primary: #316dc2;
+  --bg-middle: #d6e2f3;
   --bg-secondary: #f0efe9;
 
   --overlay-dark: rgba(13, 29, 51, 0.4);
-  --overlay-light: rgba(49, 109, 194, 0.2);
+  --overlay-light: linear-gradient(112.1deg, rgba(49, 109, 194, 0.2) 17.23%, rgba(49, 109, 194, 0.2) 94.93%);
 
   --disabled: #a9afb7;
   --active: #275699;
   --error: #ff5e66;
 }
-  // резервный цвет принят "tomato": #ff6347
+
+// резервный цвет принят "tomato": #ff6347
 
 /*
-  --primary: #316dc2;
-  --white: #ffffff;
-  --beige: #f0efe9;
-  --text: #484848;
-  --dark-overlay: rgba(13, 29, 51, 0.4);
-  --blue-overlay: rgba(49, 109, 194, 0.2);
-  --state-disabled: #a9afb7;
-  --state-active: #275699;
-  --state-error: #ff5e66;
+$primary-text-color: #484848;
+$accent-color: #316dc2;
+$white-color: #ffffff;
+$background-color: #f0efe9;
+$background-color-img: #d6e2f3;
+$active-button: #275699;
+$disabled-button: #a9afb7;
+$error-color: #ff5e66;
+$overlay-photo: linear-gradient(112.1deg, rgba(49, 109, 194, 0.2) 17.23%, rgba(49, 109, 194, 0.2) 94.93%);
+$overlay-menu: rgba(13, 29, 51, 0.4);
 */
