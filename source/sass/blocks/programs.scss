@@ -1,0 +1,316 @@
+.programs__wrapper {
+  position: relative;
+  width: 320px;
+  padding: 50px 15px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 50px 0 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 60px 100px 70px;
+  }
+}
+
+.programs__title {
+  text-align: left;
+  margin: 6px 0 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 3px 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 5px 0 45px;
+  }
+}
+
+.programs__button-swiper-wrapper {
+  position: absolute;
+  top: 54px;
+  right: 15px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+    bottom: 50px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 100px;
+    bottom: 60px;
+  }
+}
+
+.programs__swiper {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__list .programs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 290px;
+  min-height: 400px;
+  height: auto;
+  border-radius: 12px;
+  background-color: var(--bg-middle, tomato);
+  background-size: cover;
+  background-position: center;
+  padding: 18px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 420px;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 392px;
+    padding: 17px 51px 17px 20px;
+  }
+
+  &--internship {
+    background-image:
+      var(--overlay-light, tomato),
+      image-set(url("../../img/programs-mobile-1@1x.webp") type("image/webp") 1x,
+        url("../../img/programs-mobile-1@2x.webp") type("image/webp") 2x,
+        url("../../img/programs-mobile-1@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/programs-mobile-1@2x.jpg") type("image/jpeg") 2x);
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-tablet-1@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-tablet-1@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-tablet-1@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-tablet-1@2x.jpg") type("image/jpeg") 2x);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-desktop-1@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-desktop-1@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-desktop-1@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-desktop-1@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+
+  &--volunteer {
+    background-image:
+      var(--overlay-light, tomato),
+      image-set(url("../../img/programs-mobile-2@1x.webp") type("image/webp") 1x,
+        url("../../img/programs-mobile-2@2x.webp") type("image/webp") 2x,
+        url("../../img/programs-mobile-2@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/programs-mobile-2@2x.jpg") type("image/jpeg") 2x);
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-tablet-2@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-tablet-2@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-tablet-2@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-tablet-2@2x.jpg") type("image/jpeg") 2x);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-desktop-2@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-desktop-2@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-desktop-2@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-desktop-2@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+
+  &--studies {
+    background-image:
+      var(--overlay-light, tomato),
+      image-set(url("../../img/programs-mobile-3@1x.webp") type("image/webp") 1x,
+        url("../../img/programs-mobile-3@2x.webp") type("image/webp") 2x,
+        url("../../img/programs-mobile-3@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/programs-mobile-3@2x.jpg") type("image/jpeg") 2x);
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-tablet-3@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-tablet-3@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-tablet-3@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-tablet-3@2x.jpg") type("image/jpeg") 2x);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image:
+        var(--overlay-light, tomato),
+        image-set(url("../../img/programs-desktop-3@1x.webp") type("image/webp") 1x,
+          url("../../img/programs-desktop-3@2x.webp") type("image/webp") 2x,
+          url("../../img/programs-desktop-3@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/programs-desktop-3@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+}
+
+.programs__heading {
+  display: block;
+  margin: 0;
+  position: relative;
+  width: 146px;
+  background-color: var(--bg-ligth, tomato);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--bg-primary, tomato);
+  padding: 18px 18px 6px;
+  border-radius: 12px 12px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    font-size: 20px;
+    line-height: 14px;
+    padding: 18px 18px 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 194px;
+    font-size: 24px;
+    line-height: 17px;
+    padding: 17px 35px 6px 18px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../__spritemap#sprite-angle-left-up-view");
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+    background-color: inherit;
+    z-index: 2;
+    bottom: 0;
+    right: -16px;
+
+    @media (min-width: $tablet-width) {
+      right: -18px;
+      width: 18px;
+      height: 18px;
+      mask-size: 18px 18px;
+    }
+  }
+}
+
+.programs__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  background-color: var(--bg-ligth, tomato);
+  border-radius: 0 12px 12px;
+  padding: 13px 18px 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 284px;
+    padding: 12px 18px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 321px;
+    min-height: 82px;
+  }
+}
+
+.programs__text-wrapper p {
+  display: block;
+  margin: 0;
+  width: 188px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  color: var(--text-primary, tomato);;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+    line-height: 18px;
+  }
+}
+
+.programs__text-wrapper br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.programs__link {
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.programs__button {
+  display: block;
+  text-decoration: none;
+  width: 205px;
+  padding: 16px 68px 14px 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    width: 234px;
+    padding: 20px 80px 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62px;
+    right: 100px;
+  }
+}
+
+.programs__scrollbar {
+  width: 562px;
+  left: 0;
+  bottom: 11px;
+  height: 2px;
+  background-color: rgba(49, 109, 194, 0.2);
+
+  @media (width <=767px) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1136px;
+  }
+}
+
+.programs__scrollbar .swiper-scrollbar-drag {
+  background-color: var(--bg-primary, tomato);
+}

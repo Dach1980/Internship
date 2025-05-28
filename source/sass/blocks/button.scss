@@ -1,0 +1,182 @@
+.button {
+  @include primary-font (12px, 1); // $font-size, $line-height
+
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid var(--bg-primary, tomato);
+  ;
+  color: var(--bg-primary, tomato);
+  ;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (14px, 1); // $font-size, $line-height
+
+    font-weight: 500;
+    letter-spacing: 0.24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    border-radius: 44px;
+    width: 34px;
+    height: 34px;
+    background-color: var(--bg-primary, tomato);
+    ;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+      right: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 6px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    border-radius: 44px;
+    width: 34px;
+    height: 34px;
+    background-color: var(--bg-ligth, tomato);
+    ;
+    mask-image: url("../../__spritemap#sprite-arrow-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+    transition: all 0.3s ease;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+      right: 5px;
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-primary, tomato);
+    ;
+    color: rgba(255, 255, 255, 0.7);
+
+    &::after {
+      background-color: var(--bg-primary, tomato);
+      ;
+      opacity: 0.7;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before {
+      background-color: var(--bg-ligth, tomato);
+      ;
+    }
+  }
+
+  &:hover {
+    background-color: var(--bg-primary, tomato);
+    ;
+    color: var(--bg-ligth, tomato);
+    ;
+
+    &::after {
+      background-color: var(--bg-primary, tomato);
+      ;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before {
+      background-color: var(--bg-ligth, tomato);
+      ;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    border: 1px solid var(--disabled, tomato);
+    ;
+    color: var(--disabled, tomato);
+    ;
+    cursor: not-allowed;
+
+    &::after {
+      background-color: var(--bg-ligth, tomato);
+      ;
+    }
+
+    &::before {
+      background-color: var(--disabled, tomato);
+      ;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid var(--disabled, tomato);
+      ;
+      background-color: inherit;
+      color: var(--disabled, tomato);
+      ;
+      cursor: not-allowed;
+
+      &::after {
+        background-color: var(--bg-ligth, tomato);
+        ;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        background-color: var(--disabled, tomato);
+        ;
+      }
+    }
+  }
+}
+
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:focus,
+.button--disabled:active {
+  border: 1px solid var(--disabled, tomato);
+  ;
+  background-color: inherit;
+  color: var(--disabled, tomato);
+  ;
+  cursor: not-allowed;
+
+  &::after {
+    background-color: var(--bg-ligth, tomato);
+    ;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    background-color: var(--disabled, tomato);
+    ;
+  }
+}

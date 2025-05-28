@@ -1,0 +1,34 @@
+.page-body {
+  @include primary-font (16px, 22px); // $font-size, $line-height
+
+  font-weight: 400;
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary, tomato);
+  color: var(--text-primary, tomato);
+  padding: 0;
+  overflow-x: hidden;
+
+  @media (width >= 768px) {
+    line-height: 20px;
+  }
+}
+
+.page-body--menu .main-content {
+  position: relative;
+}
+
+.page-body--menu .main-content::after,
+.page-body--menu .main-footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-dark, tomato);
+  z-index: 3;
+}
