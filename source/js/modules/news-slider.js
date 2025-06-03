@@ -1,5 +1,10 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
+import '../../sass/vendor/swiper.scss';
+// import 'swiper/scss';
+// import 'swiper/scss/navigation';
+// import 'swiper/scss/pagination';
+import 'swiper/scss/grid';
 
 const newsSlides = document.querySelectorAll('.news__item');
 const newsSlider = document.querySelector('.news__swiper');

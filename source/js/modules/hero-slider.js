@@ -1,7 +1,10 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
-// import 'swiper/css';
+// import 'swiper/scss';
+// import 'swiper/scss/navigation';
+// import 'swiper/scss/pagination';
+// import 'swiper/scss/grid';
 
 function debounce(callback, timeoutDelay = 300) {
   let timeoutId;
