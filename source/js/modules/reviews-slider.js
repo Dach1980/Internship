@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
 // import 'swiper/css';
+import 'swiper/scss/scrollbar';
 
 const getReviewsSlider = new Swiper('.reviews__swiper', {
   direction: 'horizontal',
