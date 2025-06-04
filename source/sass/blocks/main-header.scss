@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 30px 45px 0;
+    padding: 30px 44px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,8 +63,13 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding: 20px 0 20px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 20px 0 20px 20px;
   }
+
 
   &::after {
     position: absolute;
@@ -78,6 +83,11 @@
     border-radius: 50px;
 
     @media (min-width: $tablet-width) {
+      top: 4px;
+      right: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 5px;
       right: 5px;
     }
@@ -93,12 +103,17 @@
     height: 46px;
     mask-image: url("../../__spritemap#sprite-menu-view");
     mask-position: 50% 50%;
-    mask-size: 20px 20px;
+    mask-size: 17px 17px;
     mask-repeat: no-repeat;
     background-color: var(--bg-ligth, tomato);
     z-index: 4;
 
     @media (min-width: $tablet-width) {
+      top: 4px;
+      right: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 5px;
       right: 5px;
     }
