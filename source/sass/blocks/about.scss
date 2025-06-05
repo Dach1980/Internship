@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 50px 85px 50px 45px;
+    padding: 50px 85px 50px 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +19,10 @@
 
 .about__title-wrapper {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 702px;
@@ -38,10 +42,14 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font (20px, 26px); // $font-size, $line-height
+
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
     @include primary-font (22px, 32px); // $font-size, $line-height
+
+    margin-bottom: 20px;
   }
 }
 
@@ -58,11 +66,13 @@
   @media (min-width: $tablet-width) {
     @include primary-font (34px, 50px); // $font-size, $line-height
 
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
     @include primary-font (50px, 1); // $font-size, $line-height
+
+    margin-bottom: 30px;
   }
 }
 
@@ -130,6 +140,11 @@
   padding: 15px 56px 15px 20px;
 
   @media (min-width: $tablet-width) {
+    width: 279px;
+    padding: 21px 79px 19px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 279px;
     padding: 20px 79px 20px 30px;
   }
