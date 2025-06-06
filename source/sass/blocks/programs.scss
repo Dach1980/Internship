@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 50px 0 60px 45px;
+    padding: 50px 0 60px 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +35,7 @@
   height: 22px;
 
   @media (min-width: $tablet-width) {
-    top: auto;
+    top: 600px;
     bottom: 50px;
     right: 45px;
   }
@@ -284,7 +284,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 50px;
-    right: 45px;
+    right: 46px;
     width: 234px;
     padding: 20px 80px 20px 30px;
   }
