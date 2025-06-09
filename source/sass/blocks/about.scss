@@ -37,7 +37,7 @@
   display: block;
   margin: 0;
   text-align: left;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
   display: block;
   margin: 0;
   text-align: left;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -97,7 +97,7 @@
   display: block;
   margin: 0;
   text-align: left;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -118,7 +118,7 @@
 
   font-weight: 400;
   text-align: left;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -152,15 +152,14 @@
 
 .about__content {
   margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
   width: 290px;
   border-radius: 20px;
-  background-color: var(--bg-primary, tomato);
-  color: var(--bg-ligth, tomato);
+  background-color: var(--bg-primary, #ff6347);
+  color: var(--bg-ligth, #ff6347);
   padding: 42px 20px 40px;
 
   @media (min-width: $tablet-width) {
@@ -180,7 +179,7 @@
 .about__item {
   position: relative;
   width: 250px;
-  border: 1px solid var(--bg-secondary, tomato);
+  border: 1px solid var(--bg-secondary, #ff6347);
   border-radius: 16px;
   padding: 15px 20px;
 
@@ -205,7 +204,7 @@
     left: -21px;
     width: 42px;
     height: 42px;
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 
   &::after {
@@ -219,7 +218,7 @@
     mask-size: 22px 22px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
   }
 }
 

@@ -5,7 +5,7 @@
   width: 30px;
   height: 30px;
   border-radius: 44px;
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
   cursor: pointer;
 
   &::after {
@@ -16,7 +16,7 @@
     border-radius: 44px;
     width: 30px;
     height: 30px;
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
     mask-image: url("../../__spritemap#sprite-arrow-view");
     mask-size: 10px 10px;
     mask-repeat: no-repeat;
@@ -26,20 +26,20 @@
   }
 
   &:active {
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
 
     &::after {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
       opacity: 0.7;
       transform: rotate(45deg);
     }
   }
 
   &:hover {
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
 
     &::after {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
       opacity: 1;
       transform: rotate(45deg);
     }
@@ -59,7 +59,7 @@
 .link--disabled:hover,
 .link--disabled:active,
 .link--disabled:focus {
-  background-color: var(--disabled, tomato);
+  background-color: var(--disabled, #ff6347);
   cursor: not-allowed;
 
   &::after {

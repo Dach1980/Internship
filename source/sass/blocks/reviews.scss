@@ -1,7 +1,7 @@
 .reviews__wrapper {
   position: relative;
   width: 320px;
-  padding: 51px 15px 50px 15px;
+  padding: 51px 15px 50px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -62,7 +62,7 @@
   min-height: 472px;
   height: auto;
   border-radius: 16px;
-  border: 2px solid var(--bg-primary, tomato);
+  border: 2px solid var(--bg-primary, #ff6347);
   padding: 30px 15px;
   align-self: stretch;
 
@@ -123,7 +123,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -171,7 +171,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
@@ -186,7 +186,7 @@
   line-height: 14px;
   text-align: left;
   text-decoration-skip-ink: none;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -206,7 +206,7 @@
   font-weight: 400;
   text-align: left;
   text-decoration-skip-ink: none;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -229,7 +229,7 @@
   line-height: 20px;
   text-align: left;
   text-decoration-skip-ink: none;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -247,7 +247,7 @@
   height: 2px;
   background-color: rgba(49, 109, 194, 0.2);
 
-  @media (width <=767px) {
+  @media (width <= 767px) {
     display: none;
   }
 
@@ -257,5 +257,5 @@
 }
 
 .reviews__scrollbar .swiper-scrollbar-drag {
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
 }

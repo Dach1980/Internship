@@ -8,10 +8,10 @@
   text-decoration-skip-ink: none;
   position: relative;
   border-radius: 30px;
-  border: 1px solid var(--bg-primary, tomato);
-  ;
-  color: var(--bg-primary, tomato);
-  ;
+  border: 1px solid var(--bg-primary, #ff6347);
+
+  color: var(--bg-primary, #ff6347);
+
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -35,8 +35,8 @@
     border-radius: 44px;
     width: 34px;
     height: 34px;
-    background-color: var(--bg-primary, tomato);
-    ;
+    background-color: var(--bg-primary, #ff6347);
+
 
     @media (min-width: $tablet-width) {
       width: 46px;
@@ -58,8 +58,8 @@
     border-radius: 44px;
     width: 34px;
     height: 34px;
-    background-color: var(--bg-ligth, tomato);
-    ;
+    background-color: var(--bg-ligth, #ff6347);
+
     mask-image: url("../../__spritemap#sprite-arrow-view");
     mask-size: 10px 10px;
     mask-repeat: no-repeat;
@@ -78,38 +78,36 @@
   }
 
   &:active {
-    background-color: var(--bg-primary, tomato);
-    ;
+    background-color: var(--bg-primary, #ff6347);
+
     color: rgba(255, 255, 255, 0.7);
 
     &::after {
-      background-color: var(--bg-primary, tomato);
-      ;
+      background-color: var(--bg-primary, #ff6347);
+
       opacity: 0.7;
       transform: translateY(-50%) rotate(45deg);
     }
 
     &::before {
-      background-color: var(--bg-ligth, tomato);
-      ;
+      background-color: var(--bg-ligth, #ff6347);
     }
   }
 
   &:hover {
-    background-color: var(--bg-primary, tomato);
-    ;
-    color: var(--bg-ligth, tomato);
-    ;
+    background-color: var(--bg-primary, #ff6347);
+
+    color: var(--bg-ligth, #ff6347);
+
 
     &::after {
-      background-color: var(--bg-primary, tomato);
-      ;
+      background-color: var(--bg-primary, #ff6347);
+
       transform: translateY(-50%) rotate(45deg);
     }
 
     &::before {
-      background-color: var(--bg-ligth, tomato);
-      ;
+      background-color: var(--bg-ligth, #ff6347);
     }
   }
 
@@ -122,41 +120,38 @@
   }
 
   &:disabled {
-    border: 1px solid var(--disabled, tomato);
-    ;
-    color: var(--disabled, tomato);
-    ;
+    border: 1px solid var(--disabled, #ff6347);
+
+    color: var(--disabled, #ff6347);
+
     cursor: not-allowed;
 
     &::after {
-      background-color: var(--bg-ligth, tomato);
-      ;
+      background-color: var(--bg-ligth, #ff6347);
     }
 
     &::before {
-      background-color: var(--disabled, tomato);
-      ;
+      background-color: var(--disabled, #ff6347);
     }
 
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid var(--disabled, tomato);
-      ;
+      border: 1px solid var(--disabled, #ff6347);
+
       background-color: inherit;
-      color: var(--disabled, tomato);
-      ;
+      color: var(--disabled, #ff6347);
+
       cursor: not-allowed;
 
       &::after {
-        background-color: var(--bg-ligth, tomato);
-        ;
+        background-color: var(--bg-ligth, #ff6347);
+
         transform: translateY(-50%);
       }
 
       &::before {
-        background-color: var(--disabled, tomato);
-        ;
+        background-color: var(--disabled, #ff6347);
       }
     }
   }
@@ -166,21 +161,20 @@
 .button--disabled:hover,
 .button--disabled:focus,
 .button--disabled:active {
-  border: 1px solid var(--disabled, tomato);
-  ;
+  border: 1px solid var(--disabled, #ff6347);
+
   background-color: inherit;
-  color: var(--disabled, tomato);
-  ;
+  color: var(--disabled, #ff6347);
+
   cursor: not-allowed;
 
   &::after {
-    background-color: var(--bg-ligth, tomato);
-    ;
+    background-color: var(--bg-ligth, #ff6347);
+
     transform: translateY(-50%);
   }
 
   &::before {
-    background-color: var(--disabled, tomato);
-    ;
+    background-color: var(--disabled, #ff6347);
   }
 }

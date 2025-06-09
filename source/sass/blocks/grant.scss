@@ -1,12 +1,12 @@
 .grant {
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
 }
 
 .grant__wrapper {
   width: 320px;
   padding: 71px 15px 70px;
   margin: 0 auto;
-  color: var(--bg-ligth, tomato);
+  color: var(--bg-ligth, #ff6347);
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -52,7 +52,7 @@
 
     padding-right: 180px;
     margin-bottom: 40px;
-    color: var(--bg-secondary, tomato);
+    color: var(--bg-secondary, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -181,9 +181,9 @@
   counter-increment: chapter;
   width: 275px;
   padding: 24px 25px;
-  border: 1px solid var(--bg-ligth, tomato);
+  border: 1px solid var(--bg-ligth, #ff6347);
   border-radius: 16px;
-  color: var(--bg-secondary, tomato);
+  color: var(--bg-secondary, #ff6347);
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
@@ -211,7 +211,7 @@
     left: -15px;
     width: 27px;
     height: 32px;
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
 
     @media (min-width: $tablet-width) {
       @include primary-font (22px, 1); // $font-size, $line-height

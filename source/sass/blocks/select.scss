@@ -13,7 +13,7 @@
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    background-color: var(--text-primary, tomato);;
+    background-color: var(--text-primary, #ff6347);
     mask-image: url("../../__spritemap#sprite-arrow-down-view");
     mask-size: 16px 16px;
     mask-repeat: no-repeat;
@@ -31,7 +31,7 @@
 .select--error .form__field:hover {
   color: rgb(255, 255, 255, 0);
   border-radius: 8px;
-  border: 1px solid var(--error, tomato);;
+  border: 1px solid var(--error, #ff6347);
   background: rgba(255, 94, 102, 0.2);
 }
 
@@ -55,8 +55,8 @@
   top: 48px;
   width: 100%;
   border-radius: 8px;
-  background: var(--bg-ligth, tomato);;
-  border: 1px solid var(--text-primary, tomato);;
+  background: var(--bg-ligth, #ff6347);
+  border: 1px solid var(--text-primary, #ff6347);
   overflow: hidden;
   display: block;
   z-index: 1;
@@ -67,18 +67,18 @@
   font-size: 14px;
   line-height: 14px;
   text-align: left;
-  color: var(--text-primary, tomato);;
+  color: var(--text-primary, #ff6347);
   padding: 17px 20px;
   cursor: pointer;
 
   &:hover {
-    color: var(--bg-primary, tomato);;
+    color: var(--bg-primary, #ff6347);
   }
 
   &:active,
   &:focus {
     outline: none;
-    background-color: var(--bg-primary, tomato);;
-    color: var(--bg-ligth, tomato);;
+    background-color: var(--bg-primary, #ff6347);
+    color: var(--bg-ligth, #ff6347);
   }
 }

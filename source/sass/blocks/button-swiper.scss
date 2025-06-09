@@ -12,7 +12,7 @@
     left: 0;
     width: 22px;
     height: 22px;
-    background-color: var(--bg-primary, tomato);;
+    background-color: var(--bg-primary, #ff6347);
     border-radius: 50%;
     mask-image: url("../../__spritemap#sprite-arrow-slider-view");
     mask-size: 10px 10px;
@@ -33,12 +33,12 @@
   &:focus {
     outline: none;
     border-radius: 30px;
-    background-color: var(--bg-ligth, tomato);;
+    background-color: var(--bg-ligth, #ff6347);
   }
 
   &:active {
     border-radius: 30px;
-    background-color: var(--bg-ligth, tomato);;
+    background-color: var(--bg-ligth, #ff6347);
 
     &::after {
       opacity: 0.7;
@@ -49,7 +49,7 @@
     cursor: not-allowed;
 
     &::after {
-      background-color: var(--disabled, tomato);;
+      background-color: var(--disabled, #ff6347);
     }
 
     &:hover,
@@ -58,7 +58,7 @@
       background-color: inherit;
 
       &::after {
-        background-color: var(--disabled, tomato);;
+        background-color: var(--disabled, #ff6347);
         opacity: 1;
       }
     }

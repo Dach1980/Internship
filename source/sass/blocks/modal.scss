@@ -1,6 +1,6 @@
 .modal__wrapper {
   width: 290px;
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
   position: fixed;
   top: 23px;
   left: 50%;
@@ -27,7 +27,7 @@
   mask-image: url("../../__spritemap#sprite-cross-view");
   mask-size: 16px 16px;
   mask-repeat: no-repeat;
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -47,7 +47,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   margin: 0 20px 15px;
 
   @media (min-width: $tablet-width) {
@@ -66,7 +66,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
   margin: 0 20px 15px;
 
   @media (min-width: $tablet-width) {
@@ -107,7 +107,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
   opacity: 0.8;
 
   @media (min-width: $tablet-width) {
@@ -124,8 +124,8 @@
   line-height: 14px;
   border-radius: 8px;
   border: 1px solid rgba(72, 72, 72, 0.3);
-  background-color: var(--bg-ligth, tomato);
-  color: var(--text-primary, tomato);
+  background-color: var(--bg-ligth, #ff6347);
+  color: var(--text-primary, #ff6347);
   padding: 14px 19px;
   cursor: pointer;
 
@@ -138,7 +138,7 @@
   &:active,
   &:hover {
     outline: none;
-    border: 1px solid var(--text-primary, tomato);
+    border: 1px solid var(--text-primary, #ff6347);
     cursor: text;
   }
 
@@ -146,13 +146,13 @@
   &--error:focus,
   &--error:active,
   &--error:hover {
-    border: 1px solid var(--error, tomato);
+    border: 1px solid var(--error, #ff6347);
     background: rgba(255, 94, 102, 0.2);
   }
 
   &:disabled {
-    background-color: var(--bg-secondary, tomato);
-    border-color: var(--disabled, tomato);
+    background-color: var(--bg-secondary, #ff6347);
+    border-color: var(--disabled, #ff6347);
     cursor: not-allowed;
   }
 }
@@ -169,7 +169,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
   border-radius: 2px;
   padding: 6px 4px;
   transition: transform 0.3s ease;
@@ -185,7 +185,7 @@
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    border: 1px solid var(--error, tomato);
+    border: 1px solid var(--error, #ff6347);
     background: rgba(255, 94, 102, 0.2);
   }
 }
@@ -219,12 +219,12 @@
   mask-repeat: no-repeat;
   mask-size: 12px 8px;
   mask-position: center;
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
 }
 
 .modal__control-input[type="checkbox"]:hover + .modal__control-mark,
 .modal__control-input[type="checkbox"]:focus + .modal__control-mark {
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
 
   &::after {
     content: "";
@@ -234,23 +234,23 @@
     width: 20px;
     height: 20px;
     border-radius: 2px;
-    border: 1px solid var(--bg-primary, tomato);
+    border: 1px solid var(--bg-primary, #ff6347);
   }
 
   &::before {
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 }
 
 .modal__control-input[type="checkbox"]:disabled + .modal__control-mark {
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 .modal__button {
   width: 260px;
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
   padding: 14px 67px 14px 29px;
 
   @media (min-width: $tablet-width) {

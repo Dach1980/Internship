@@ -94,7 +94,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -113,15 +113,15 @@
 
   &:focus {
     outline: none;
-    color: var(--bg-primary, tomato);
+    color: var(--bg-primary, #ff6347);
   }
 
   &:active {
-    color: var(--active, tomato);
+    color: var(--active, #ff6347);
   }
 
   &--disabled {
-    color: var(--disabled, tomato);
+    color: var(--disabled, #ff6347);
     cursor: not-allowed;
   }
 }
@@ -133,8 +133,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
-  color: var(--text-primary, tomato);
-  border-bottom: 1px solid var(--text-primary, tomato);
+  color: var(--text-primary, #ff6347);
+  border-bottom: 1px solid var(--text-primary, #ff6347);
   padding-bottom: 1px;
   margin-bottom: 11px;
   cursor: pointer;
@@ -151,26 +151,26 @@
   }
 
   &:hover {
-    color: var(--bg-primary, tomato);
-    border-bottom: 1px solid var(--bg-primary, tomato);
+    color: var(--bg-primary, #ff6347);
+    border-bottom: 1px solid var(--bg-primary, #ff6347);
     opacity: 0.7;
   }
 
   &:focus {
     outline: none;
-    color: var(--bg-primary, tomato);
-    border-bottom: 1px solid var(--bg-primary, tomato);
+    color: var(--bg-primary, #ff6347);
+    border-bottom: 1px solid var(--bg-primary, #ff6347);
     opacity: 1;
   }
 
   &:active {
-    color: var(--active, tomato);
-    border-bottom: 1px solid var(--active, tomato);
+    color: var(--active, #ff6347);
+    border-bottom: 1px solid var(--active, #ff6347);
   }
 
   &--disabled {
-    color: var(--disabled, tomato);
-    border-bottom: 1px solid var(--disabled, tomato);
+    color: var(--disabled, #ff6347);
+    border-bottom: 1px solid var(--disabled, #ff6347);
     cursor: not-allowed;
   }
 }

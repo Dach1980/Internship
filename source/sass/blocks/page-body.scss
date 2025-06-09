@@ -7,8 +7,8 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-secondary, tomato);
-  color: var(--text-primary, tomato);
+  background-color: var(--bg-secondary, #ff6347);
+  color: var(--text-primary, #ff6347);
   padding: 0;
   overflow-x: hidden;
 
@@ -29,6 +29,6 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay-dark, tomato);
+  background-color: var(--overlay-dark, #ff6347);
   z-index: 3;
 }

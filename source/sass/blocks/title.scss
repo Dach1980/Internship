@@ -6,7 +6,7 @@
   line-height: 20px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
 
   @media (min-width: $tablet-width) {
     font-size: 34px;

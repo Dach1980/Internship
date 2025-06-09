@@ -1,6 +1,6 @@
 .faq__wrapper {
   width: 320px;
-  padding: 51px 15px 50px 15px;
+  padding: 51px 15px 50px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 60px 206px 60px;
+    padding: 60px 206px;
   }
 }
 
@@ -52,13 +52,13 @@
 
 .faq__item {
   border-radius: 14px;
-  border: 2px solid var(--bg-primary, tomato);
-  color: var(--bg-primary, tomato);
-  padding: 21px 15px 19px 15px;
+  border: 2px solid var(--bg-primary, #ff6347);
+  color: var(--bg-primary, #ff6347);
+  padding: 21px 15px 19px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 30.3px 30px;
+    padding: 30px 30px 30.3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,26 +66,26 @@
   }
 
   &--active {
-    background-color: var(--bg-primary, tomato);
-    color: var(--bg-ligth, tomato);
+    background-color: var(--bg-primary, #ff6347);
+    color: var(--bg-ligth, #ff6347);
   }
 
   &:hover,
   &:focus {
-    background-color: var(--bg-ligth, tomato);
-    color: var(--bg-primary, tomato);
+    background-color: var(--bg-ligth, #ff6347);
+    color: var(--bg-primary, #ff6347);
   }
 
   &:active {
-    background-color: var(--bg-ligth, tomato);
-    color: var(--active, tomato);
+    background-color: var(--bg-ligth, #ff6347);
+    color: var(--active, #ff6347);
   }
 
   &--disabled {
     opacity: 0.5;
-    color: var(--bg-secondary, tomato);
-    border: 2px solid var(--bg-secondary, tomato);
-    background-color: var(--bg-ligth, tomato);
+    color: var(--bg-secondary, #ff6347);
+    border: 2px solid var(--bg-secondary, #ff6347);
+    background-color: var(--bg-ligth, #ff6347);
     cursor: not-allowed;
   }
 }
@@ -96,7 +96,7 @@
   height: 0;
   font-size: 14px;
   line-height: 20px;
-  color: var(--bg-secondary, tomato);
+  color: var(--bg-secondary, #ff6347);
   overflow: hidden;
   transition: all 0.5s;
 
@@ -137,8 +137,8 @@
 }
 
 .faq__item--active .faq__list-button {
-  background-color: var(--bg-ligth, tomato);
-  color: var(--bg-primary, tomato);
+  background-color: var(--bg-ligth, #ff6347);
+  color: var(--bg-primary, #ff6347);
 
   &::after {
     top: 50%;
@@ -147,7 +147,7 @@
     mask-image: none;
     height: 2px;
     width: 17px;
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 }
 
@@ -155,53 +155,53 @@
 .faq__item:hover .faq__list-button,
 .faq__list-button:focus,
 .faq__list-button:hover {
-  border: 1px solid var(--bg-primary, tomato);
+  border: 1px solid var(--bg-primary, #ff6347);
   outline: none;
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
 
   &::after {
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 }
 
 .faq__item:active .faq__list-button,
 .faq__list-button:active {
-  border: 1px solid var(--bg-primary, tomato);
+  border: 1px solid var(--bg-primary, #ff6347);
   outline: none;
-  background-color: var(--active, tomato);
+  background-color: var(--active, #ff6347);
 
   &::after {
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
   }
 }
 
 .faq__item--active:focus,
 .faq__item--active:hover {
-  background-color: var(--bg-primary, tomato);
-  color: var(--bg-ligth, tomato);
+  background-color: var(--bg-primary, #ff6347);
+  color: var(--bg-ligth, #ff6347);
 }
 
 .faq__item--active:focus .faq__list-button,
 .faq__item--active:hover .faq__list-button {
-  background-color: var(--bg-primary, tomato);
-  color: var(--bg-ligth, tomato);
-  border: 1px solid var(--bg-ligth, tomato);
+  background-color: var(--bg-primary, #ff6347);
+  color: var(--bg-ligth, #ff6347);
+  border: 1px solid var(--bg-ligth, #ff6347);
 
   &::after {
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
   }
 }
 
 .faq__item--active:active {
-  background-color: var(--active, tomato);
-  color: var(--bg-ligth, tomato);
+  background-color: var(--active, #ff6347);
+  color: var(--bg-ligth, #ff6347);
 }
 
 .faq__item--active:active .faq__list-button {
-  background-color: var(--bg-ligth, tomato);
+  background-color: var(--bg-ligth, #ff6347);
 
   &::after {
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 }
 
@@ -209,20 +209,20 @@
 .faq__item--disabled:focus,
 .faq__item--disabled:active {
   opacity: 0.5;
-  color: var(--bg-secondary, tomato);
-  border: 2px solid var(--bg-secondary, tomato);
-  background-color: var(--bg-ligth, tomato);
+  color: var(--bg-secondary, #ff6347);
+  border: 2px solid var(--bg-secondary, #ff6347);
+  background-color: var(--bg-ligth, #ff6347);
 }
 
 .faq__item--disabled .faq__list-button,
 .faq__item--disabled:hover .faq__list-button,
 .faq__item--disabled:focus .faq__list-button,
 .faq__item--disabled:active .faq__list-button {
-  background-color: var(--bg-ligth, tomato);
-  border: 1px solid var(--bg-secondary, tomato);
+  background-color: var(--bg-ligth, #ff6347);
+  border: 1px solid var(--bg-secondary, #ff6347);
 
   &::after {
-    background-color: var(--bg-secondary, tomato);
+    background-color: var(--bg-secondary, #ff6347);
   }
 }
 
@@ -269,7 +269,7 @@
   height: 40px;
   border-radius: 30px;
   border: none;
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
 
   &::after {
     content: "";
@@ -278,7 +278,7 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
     mask-image: url("../../__spritemap#sprite-plus-view");
     mask-size: 20px 20px;
     mask-repeat: no-repeat;

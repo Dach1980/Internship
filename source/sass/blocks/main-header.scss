@@ -42,7 +42,6 @@
 
   font-weight: 500;
   letter-spacing: 0.24px;
-  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   display: block;
@@ -53,11 +52,11 @@
   min-height: 54px;
   padding: 19px 0 19px 20px;
   border-radius: 30px;
-  background-color: var(--bg-ligth, tomato);
-  border: 1px solid var(--bg-primary, tomato);
+  background-color: var(--bg-ligth, #ff6347);
+  border: 1px solid var(--bg-primary, #ff6347);
   text-align: left;
   text-transform: uppercase;
-  color: var(--bg-primary, tomato);
+  color: var(--bg-primary, #ff6347);
   z-index: 4;
   transition: all 0.5s;
   cursor: pointer;
@@ -79,7 +78,7 @@
     right: 4px;
     width: 46px;
     height: 46px;
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
     border-radius: 50px;
 
     @media (min-width: $tablet-width) {
@@ -105,7 +104,7 @@
     mask-position: 50% 50%;
     mask-size: 17px 17px;
     mask-repeat: no-repeat;
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
     z-index: 4;
 
     @media (min-width: $tablet-width) {
@@ -122,8 +121,8 @@
   &:active {
     width: 290px;
     right: 20px;
-    background-color: var(--bg-primary, tomato);
-    color: var(--bg-ligth, tomato);
+    background-color: var(--bg-primary, #ff6347);
+    color: var(--bg-ligth, #ff6347);
 
     @media (min-width: $tablet-width) {
       width: 286px;
@@ -131,43 +130,43 @@
   }
 
   &:hover {
-    background-color: var(--bg-primary, tomato);
-    color: var(--bg-ligth, tomato);
+    background-color: var(--bg-primary, #ff6347);
+    color: var(--bg-ligth, #ff6347);
 
     &::after {
-      background-color: var(--bg-ligth, tomato);
+      background-color: var(--bg-ligth, #ff6347);
     }
 
     &::before {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
     }
   }
 
   &:focus {
     background-color: inherit;
-    color: var(--bg-primary, tomato);
+    color: var(--bg-primary, #ff6347);
 
     &::after {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
     }
 
     &::before {
-      background-color: var(--bg-ligth, tomato);
+      background-color: var(--bg-ligth, #ff6347);
     }
   }
 
   &:disabled {
-    border: 1px solid var(--disabled, tomato);
-    background-color: var(--bg-ligth, tomato);
-    color: var(--disabled, tomato);
+    border: 1px solid var(--disabled, #ff6347);
+    background-color: var(--bg-ligth, #ff6347);
+    color: var(--disabled, #ff6347);
     cursor: not-allowed;
 
     &::after {
-      background-color: var(--disabled, tomato);
+      background-color: var(--disabled, #ff6347);
     }
 
     &::before {
-      background-color: var(--bg-ligth, tomato);
+      background-color: var(--bg-ligth, #ff6347);
     }
   }
 }
@@ -182,46 +181,46 @@
 .main-header__menu--opened .main-header__toggle {
   width: 290px;
   right: 20px;
-  background-color: var(--bg-primary, tomato);
-  color: var(--bg-ligth, tomato);
+  background-color: var(--bg-primary, #ff6347);
+  color: var(--bg-ligth, #ff6347);
 
   @media (min-width: $tablet-width) {
     width: 286px;
   }
 
   &::after {
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
   }
 
   &::before {
     mask-image: url("../../__spritemap#sprite-cross-view");
     mask-size: 20px 20px;
-    background-color: var(--bg-primary, tomato);
+    background-color: var(--bg-primary, #ff6347);
   }
 
   &:hover {
-    background-color: var(--bg-primary, tomato);
-    color: var(--bg-ligth, tomato);
+    background-color: var(--bg-primary, #ff6347);
+    color: var(--bg-ligth, #ff6347);
 
     &::after {
-      background-color: var(--bg-ligth, tomato);
+      background-color: var(--bg-ligth, #ff6347);
     }
 
     &::before {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
     }
   }
 
   &:focus {
-    background-color: var(--bg-ligth, tomato);
-    color: var(--bg-primary, tomato);
+    background-color: var(--bg-ligth, #ff6347);
+    color: var(--bg-primary, #ff6347);
 
     &::after {
-      background-color: var(--bg-primary, tomato);
+      background-color: var(--bg-primary, #ff6347);
     }
 
     &::before {
-      background-color: var(--bg-ligth, tomato);
+      background-color: var(--bg-ligth, #ff6347);
     }
   }
 }
@@ -257,13 +256,12 @@
 
 .main-header__list {
   margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
   padding: 35px 0 35px 25px;
-  background-color: var(--bg-primary, tomato);
+  background-color: var(--bg-primary, #ff6347);
   text-transform: uppercase;
 }
 
@@ -285,7 +283,7 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: var(--bg-ligth, tomato);
+  color: var(--bg-ligth, #ff6347);
   opacity: 0.7;
   cursor: pointer;
 
@@ -320,7 +318,7 @@
     mask-image: url("../../__spritemap#sprite-arrow-down-view");
     mask-size: 12px 12px;
     mask-repeat: no-repeat;
-    background-color: var(--bg-ligth, tomato);
+    background-color: var(--bg-ligth, #ff6347);
     opacity: 0.7;
     transition: all 0.3s ease;
   }
@@ -369,7 +367,7 @@
   text-decoration: none;
   width: max-content;
   text-align: left;
-  color: var(--bg-ligth, tomato);
+  color: var(--bg-ligth, #ff6347);
   opacity: 0.7;
   text-transform: capitalize;
   cursor: pointer;
