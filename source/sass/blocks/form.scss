@@ -2,7 +2,7 @@
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 58px;
+    padding: 50px 59px 50px 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,9 +17,9 @@
   background-image:
     var(--overlay-light, tomato),
     image-set(url("../../img/form-background-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/form-background-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/form-background-mobile@1x.jpg") type("image/jpeg") 1x,
-    url("../../img/form-background-mobile@2x.jpg") type("image/jpeg") 2x);
+      url("../../img/form-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/form-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/form-background-mobile@2x.jpg") type("image/jpeg") 2x);
   background-size: cover;
   padding: 43px 10px 40px;
   margin: 0 auto;
@@ -30,9 +30,9 @@
     background-image:
       var(--overlay-light, tomato),
       image-set(url("../../img/form-background-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/form-background-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/form-background-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/form-background-tablet@2x.jpg") type("image/jpeg") 2x);
+        url("../../img/form-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/form-background-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/form-background-tablet@2x.jpg") type("image/jpeg") 2x);
     border-radius: 16px;
     padding: 0;
   }
@@ -43,9 +43,9 @@
     background-image:
       var(--overlay-light, tomato),
       image-set(url("../../img/form-background-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/form-background-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/form-background-desktop@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/form-background-desktop@2x.jpg") type("image/jpeg") 2x);
+        url("../../img/form-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/form-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/form-background-desktop@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
@@ -60,7 +60,7 @@
     width: 442px;
     min-height: 780px;
     margin-right: auto;
-    padding: 30px 40px 36px;
+    padding: 31px 40px 36px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +86,7 @@
     font-size: 28px;
     line-height: 28px;
     margin-top: 11px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -260,6 +260,15 @@
   padding: 6px 4px;
   transition: transform 0.3s ease;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+  }
+
 }
 
 .form__control-mark--error {
@@ -303,7 +312,7 @@
   }
 }
 
-.form__control-input[type="checkbox"]:checked + .form__control-mark::before {
+.form__control-input[type="checkbox"]:checked+.form__control-mark::before {
   content: "";
   display: block;
   position: absolute;
@@ -318,8 +327,8 @@
   background-color: var(--bg-primary, tomato);
 }
 
-.form__control-input[type="checkbox"]:hover + .form__control-mark,
-.form__control-input[type="checkbox"]:focus + .form__control-mark {
+.form__control-input[type="checkbox"]:hover+.form__control-mark,
+.form__control-input[type="checkbox"]:focus+.form__control-mark {
   background-color: var(--bg-primary, tomato);
 
   &::after {
@@ -338,7 +347,7 @@
   }
 }
 
-.form__control-input[type="checkbox"]:disabled + .form__control-mark {
+.form__control-input[type="checkbox"]:disabled+.form__control-mark {
   background-color: var(--disabled, tomato);
   opacity: 0.5;
   cursor: not-allowed;
@@ -356,14 +365,15 @@
   @media (min-width: $tablet-width) {
     width: 352px;
     height: 56px;
-    margin-top: 21px;
+    margin-top: 23px;
     padding-right: 55px;
-    padding-top: 2px;
+    padding-top: 1px;
   }
 
   @media (min-width: $desktop-width) {
     width: 350px;
     margin-top: 20px;
+    padding-top: 2px;
   }
 
   &::before {
