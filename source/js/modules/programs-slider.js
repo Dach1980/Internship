@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
-// import 'swiper/css';
+import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH } from './constants';
 
 const getProgramsSlider = new Swiper('.programs__swiper', {
   direction: 'horizontal',
@@ -21,13 +21,13 @@ const getProgramsSlider = new Swiper('.programs__swiper', {
   slideClass: 'programs__item',
   wrapperClass: 'programs__list',
   breakpoints: {
-    320: {
+    [MOBILE_WIDTH]: {
       allowTouchMove: true,
       scrollbar: {
         enabled: false,
       }
     },
-    768: {
+    [TABLET_WIDTH]: {
       allowTouchMove: true,
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -35,7 +35,7 @@ const getProgramsSlider = new Swiper('.programs__swiper', {
         dragSize: 324,
       },
     },
-    1440: {
+    [DESKTOP_WIDTH]: {
       allowTouchMove: false,
       slidesPerView: 3,
       spaceBetween: 32,

@@ -1,10 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
-// import 'swiper/scss';
-// import 'swiper/scss/navigation';
-// import 'swiper/scss/pagination';
 import 'swiper/scss/grid';
+import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH } from './constants';
 
 const newsSlides = document.querySelectorAll('.news__item');
 const newsSlider = document.querySelector('.news__swiper');
@@ -72,14 +70,14 @@ const getNewsSlider = new Swiper('.news__swiper', {
   slideClass: 'news__item',
   wrapperClass: 'news__list',
   breakpoints: {
-    1440: {
+    [DESKTOP_WIDTH]: {
       slidesPerView: 'auto',
       spaceBetween: 32,
       slidesPerGroup: 3,
       grid: false,
       allowTouchMove: false,
     },
-    768: {
+    [TABLET_WIDTH]: {
       slidesPerView: 'auto',
       spaceBetween: 30,
       slidesPerGroup: 2,
@@ -90,7 +88,7 @@ const getNewsSlider = new Swiper('.news__swiper', {
       },
       allowTouchMove: true,
     },
-    320: {
+    [MOBILE_WIDTH]: {
       slidesPerView: 'auto',
       spaceBetween: 20,
       allowTouchMove: true,

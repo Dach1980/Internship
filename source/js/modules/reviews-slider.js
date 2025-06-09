@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
-// import 'swiper/css';
 import 'swiper/scss/scrollbar';
+import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH } from './constants';
 
 const getReviewsSlider = new Swiper('.reviews__swiper', {
   direction: 'horizontal',
@@ -22,13 +22,13 @@ const getReviewsSlider = new Swiper('.reviews__swiper', {
   slideClass: 'reviews__item',
   wrapperClass: 'reviews__list',
   breakpoints: {
-    320: {
+    [MOBILE_WIDTH]: {
       allowTouchMove: true,
       scrollbar: {
         enabled: false,
       }
     },
-    768: {
+    [TABLET_WIDTH]: {
       slidesPerView: 'auto',
       allowTouchMove: true,
       spaceBetween: 30,
@@ -36,7 +36,7 @@ const getReviewsSlider = new Swiper('.reviews__swiper', {
         dragSize: 324,
       },
     },
-    1440: {
+    [DESKTOP_WIDTH]: {
       slidesPerView: 2,
       spaceBetween: 32,
       allowTouchMove: false,

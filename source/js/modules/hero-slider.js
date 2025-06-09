@@ -1,10 +1,7 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
-// import 'swiper/scss';
-// import 'swiper/scss/navigation';
-// import 'swiper/scss/pagination';
-// import 'swiper/scss/grid';
+import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH } from './constants';
 
 function debounce(callback, timeoutDelay = 300) {
   let timeoutId;
@@ -54,19 +51,19 @@ const getHeroSlider = new Swiper('.hero__swiper', {
   slideClass: 'hero__item',
   wrapperClass: 'hero__list',
   breakpoints: {
-    320: {
+    [MOBILE_WIDTH]: {
       pagination: {
         clickable: true,
       },
       allowTouchMove: true,
     },
-    768: {
+    [TABLET_WIDTH]: {
       pagination: {
         clickable: true,
       },
       allowTouchMove: true,
     },
-    1440: {
+    [DESKTOP_WIDTH]: {
       pagination: {
         clickable: true,
       },
