@@ -9,5 +9,5 @@ import './modules/news-slider.js';
 import './modules/select.js';
 import './modules/tabs.js';
 import './modules/validate-form.js';
-import './modules/phone-init.js';
+import './modules/phone-handle.js';
 
