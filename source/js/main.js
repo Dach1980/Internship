@@ -1,4 +1,4 @@
-import './modules/accordeon.js';
+import './modules/accordion.js';
 import './modules/modal.js';
 import './modules/validate-modal.js';
 import './modules/menu.js';
@@ -11,10 +11,3 @@ import './modules/tabs.js';
 import './modules/validate-form.js';
 import './modules/phone-init.js';
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   window.addEventListener('load', () => {
-//   });
-
-//   window.addEventListener('resize', () => {
-//   });
-// });

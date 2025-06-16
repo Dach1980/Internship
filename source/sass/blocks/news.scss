@@ -617,4 +617,18 @@
   &--hidden {
     display: none;
   }
+
+  &:hover {
+    // background-color: transparent;
+    color: var(--bg-primary, #ff6347);
+    border-radius: 20px;
+    border: 2px solid var(--bg-primary, #ff6347);
+  }
+
+  &:focus {
+    background-color: var(--bg-ligth, #ff6347);
+    color: var(--bg-primary, #ff6347);
+    border-radius: 20px;
+    border: 2px solid var(--bg-primary, #ff6347);
+  }
 }

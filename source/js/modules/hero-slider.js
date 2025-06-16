@@ -3,7 +3,7 @@ import { Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.scss';
 import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH } from './constants';
 
-function debounce(callback, timeoutDelay = 300) {
+function debounceFunction(callback, timeoutDelay = 300) {
   let timeoutId;
   return (...rest) => {
     clearTimeout(timeoutId);
@@ -15,21 +15,21 @@ const paginationPositionBottom = () => {
   const paginationWrapper = document.querySelector('.hero__pagination');
   const currentSlide = document.querySelector('.hero__item.swiper-slide-active .hero__text-wrapper');
 
-  const isValid = () => {
+  const isMobileScreen = () => {
     const desktopWidth = window.matchMedia('(max-width: 767px)');
     return desktopWidth.matches;
   };
 
-  if (isValid()) {
+  if (isMobileScreen()) {
     const elementHeight = currentSlide.clientHeight + 19;
     paginationWrapper.style.bottom = `${elementHeight}px`;
-  } else if (!isValid()) {
+  } else if (!isMobileScreen()) {
     const elementHeight = currentSlide.clientHeight + 59;
     paginationWrapper.style.bottom = `${elementHeight}px`;
   }
 };
 
-const debouncedResize = debounce(() => {
+const debouncedResize = debounceFunction(() => {
   paginationPositionBottom();
 }, 2);
 
